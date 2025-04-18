@@ -15,6 +15,7 @@ const Company = require('./models/company.models')
 const Role = require('./models/roles.models')
 const User = require('./models/users.models')
 const Category = require('./models/category.models')
+const ObjetiveVision = require('./models/objetiveVision.models')
 
 // Sincroización con la base de datos 
 sequalize.sync()
@@ -42,6 +43,9 @@ app.use('/categories', routeCategory);
 // Products
 const routeProduct = require('./routers/products.routers');
 app.use('/products',routeProduct)
+// ObjetiveVisio
+const routeObjetiveVision = require('./routers/objetiveVision.routers');
+app.use('/Objetivos-mision-vision',routeObjetiveVision)
 
 // Ejecución del servidor
 app.listen(port, () => {
