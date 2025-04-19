@@ -42,4 +42,14 @@ const login = async (req, res) => {
   }
 };
 
-module.exports = { login };
+//Funcion para tener el login 
+const getLogin = async (req, res) => {
+  try {
+      const login = await User.findAll();
+      res.status(200).json(login);
+  } catch (error) {
+      res.status(500).json({ error: error.message });
+  }
+};
+
+module.exports = { login, getLogin };
