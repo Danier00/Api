@@ -5,7 +5,7 @@ const ObjetiveVision = sequelize.define('ObjetiveVision', {
     id: { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true },
     tittleLanding: { type: DataTypes.STRING, allowNull: false },
     tittleWelcom: { type: DataTypes.STRING, allowNull: false },
-    text1Welcom: { type: DataTypes.STRING, allowNull: false },
+    text1Welcom: { type: DataTypes.TEXT, allowNull: false },
     text2Welcom: { type: DataTypes.STRING, allowNull: false },
     imageLogoWelcom: {type: DataTypes.STRING, allowNull: false},
     tittleOffer: {type: DataTypes.STRING, allowNull: false},

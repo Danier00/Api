@@ -10,6 +10,20 @@ exports.getAllObjetivesVisions = async (req, res) => {
   }
 };
 
+exports.createObjetiveVision = async (req, res) => {
+  try {
+    const newObjetiveVision = await ObjetiveVision.create(req.body);
+    res.status(201).json({
+      message: "Información creada exitosamente",
+      data: newObjetiveVision,
+    });
+  } catch (error) {
+    res.status(500).json({
+      message: "Error al crear la información",
+      error: error.message,
+    });
+  }
+}
 // Actualizar rol
 exports.updateObjetiveVision = async (req, res) => {
   try {
