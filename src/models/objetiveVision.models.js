@@ -15,6 +15,8 @@ const ObjetiveVision = sequelize.define('ObjetiveVision', {
     textOfferCard2: {type: DataTypes.STRING, allowNull: false},
     tittleOfferCard3: {type: DataTypes.STRING, allowNull: false},
     textOfferCard3: {type: DataTypes.STRING, allowNull: false},
+    tittleOfferCard4: {type: DataTypes.STRING, allowNull: false},
+    textOfferCard4: {type: DataTypes.STRING, allowNull: false},
     tittleAbout: {type: DataTypes.STRING, allowNull: false},
     imageAbout: {type: DataTypes.STRING, allowNull: false},
     text1About: {type: DataTypes.STRING, allowNull: false},
